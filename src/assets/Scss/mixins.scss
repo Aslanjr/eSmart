@@ -1,0 +1,23 @@
+@mixin Text($color,$size,$bold,$letter){
+    color: $color;
+    font-size: $size;
+    font-weight: $bold;
+    letter-spacing: $letter;
+    font-family: sans-serif;
+}
+@mixin btn {
+    background-color: #04D2C8;
+    color: #fff;
+    border: none;
+    border-radius: 35px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    transform-origin: top;
+    transition: background-color .45s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background-color: #0ab1a8;
+    }
+}
